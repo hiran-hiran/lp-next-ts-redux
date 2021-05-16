@@ -2,6 +2,7 @@ import { VFC } from 'react';
 import styled from 'styled-components';
 
 type Props = {
+  id?: string;
   title: string;
   description: string;
   backgroundImg: string;
@@ -11,7 +12,7 @@ type Props = {
 
 const Section: VFC<Props> = (props) => {
   return (
-    <Wrap bgImg={props.backgroundImg}>
+    <Wrap bgImg={props.backgroundImg} id={props.id}>
       <ItemText>
         <h1 className="text-6xl font-bold">{props.title}</h1>
         <p className="text-xl mt-2">{props.description}</p>
@@ -21,7 +22,7 @@ const Section: VFC<Props> = (props) => {
           <LeftButton>{props.leftBtntext}</LeftButton>
           {props.rightBtntext && <RightButton>{props.rightBtntext}</RightButton>}
         </ButtonGroup>
-        <DownArrow src="/img/down-arrow.svg" />
+        <DownArrow src="/down-arrow.svg" />
       </Buttons>
     </Wrap>
   );
@@ -36,10 +37,10 @@ const Wrap = styled.section`
   align-items: center;
   width: 100vw;
   height: 100vh;
-  background: url('/img/model-s.jpg') center no-repeat;
+  background: url('') center no-repeat;
   background-size: cover;
   scroll-snap-align: start;
-  background-image: ${(props: any) => `url("/img/${props.bgImg}")`};
+  background-image: ${(props: any) => `url("${props.bgImg}")`};
 `;
 
 const ItemText = styled.div`

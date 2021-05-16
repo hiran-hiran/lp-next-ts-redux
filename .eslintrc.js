@@ -14,7 +14,7 @@ module.exports = {
     'prettier',
   ],
   rules: {
-    'no-console': ['error', { allow: ['warn', 'info', 'error'] }],
+    // 'no-console': ['error', { allow: ['warn', 'info', 'error'] }],
     'no-restricted-syntax': ['error', { selector: 'TSEnumDeclaration', message: "Don't declare enums" }],
     'prefer-arrow-callback': 'error',
     'func-style': ['error', 'expression'],

@@ -8,46 +8,36 @@ const Home: VFC = () => {
     <Layout>
       <Container>
         <Section
-          title="Model S"
+          id="lorem01"
+          title="Lorem Ipsum"
           description="Order Online Touchless Delivery"
-          backgroundImg="model-s.jpg"
+          backgroundImg="https://cdn.pixabay.com/photo/2017/03/28/12/11/chairs-2181960_1280.jpg"
           leftBtntext="CUSTOM ORDER"
           rightBtntext="EXISTING INVENTORY"
         />
         <Section
-          title="Model Y"
+          id="lorem02"
+          title="Lorem Ipsum"
           description="Order Online Touchless Delivery"
-          backgroundImg="model-y.jpg"
+          backgroundImg="https://cdn.pixabay.com/photo/2018/07/31/14/09/hot-3575167_1280.jpg"
           leftBtntext="CUSTOM ORDER"
           rightBtntext="EXISTING INVENTORY"
         />
         <Section
-          title="Model 3"
+          id="lorem03"
+          title="Lorem Ipsum"
           description="Order Online Touchless Delivery"
-          backgroundImg="model-3.jpg"
+          backgroundImg="https://cdn.pixabay.com/photo/2021/04/26/15/27/flowers-6209247_1280.jpg"
           leftBtntext="CUSTOM ORDER"
           rightBtntext="EXISTING INVENTORY"
         />
         <Section
-          title="Model X"
+          id="lorem04"
+          title="Lorem Ipsum"
           description="Order Online Touchless Delivery"
-          backgroundImg="model-x.jpg"
+          backgroundImg="https://cdn.pixabay.com/photo/2021/05/05/20/51/mosque-6231915_1280.jpg"
           leftBtntext="CUSTOM ORDER"
           rightBtntext="EXISTING INVENTORY"
-        />
-        <Section
-          title="Lowest Cost Solar Panels in America"
-          description="Money-back quarantee"
-          backgroundImg="solar-panel.jpg"
-          leftBtntext="CUSTOM ORDER"
-          rightBtntext="EXISTING INVENTORY"
-        />
-        <Section
-          title="Lowest for New Roofs"
-          description="Money-back quarantee"
-          backgroundImg="solar-roof.jpg"
-          leftBtntext="CUSTOM ORDER"
-          // rightBtntext="EXISTING INVENTORY"
         />
       </Container>
     </Layout>

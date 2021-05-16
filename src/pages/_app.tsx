@@ -1,5 +1,7 @@
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
+import { Provider } from 'react-redux';
+import { store } from 'src/store';
 import 'styles/globals.css';
 import 'tailwindcss/tailwind.css';
 
@@ -9,7 +11,9 @@ const App = ({ Component, pageProps }: AppProps) => {
       <Head>
         <title>TOP</title>
       </Head>
-      <Component {...pageProps} />
+      <Provider store={store}>
+        <Component {...pageProps} />
+      </Provider>
     </>
   );
 };
